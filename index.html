@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Model Viewer</title>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="description-card">
+      <h1 id="model-title"></h1>
+      <p id="model-description"></p>
+    </div>
+
+    <!-- rotation-per-second="4000deg" -->
+    <model-viewer
+      id="mv"
+      shadow-intensity="2"
+      camera-controls
+      ar
+      disable-tap
+      autoplay
+      progress-bar
+      auto-rotate-delay="1000"
+      auto-rotate
+      style="width: 100%; max-height: 100%"
+      interaction-prompt="none"
+    >
+      <div slot="progress-bar" id="progress-bar">
+        <div id="bar"></div>
+      </div>
+      <button id="ar-button" slot="ar-button">Mulai AR</button>
+    </model-viewer>
+  </body>
+  <script src="index.js"></script>
+</html>
