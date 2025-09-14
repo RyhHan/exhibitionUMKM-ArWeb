@@ -43,6 +43,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
       title: "Resident Evil Tyrant",
       description: "Model 3D dari Resident Evil Tyrant.",
     },
+    "GatotKaca.glb": {
+      title: "Gatot Kaca",
+      description: "Model 3D dari Gatot Kaca.",
+    },
+    "3DModel.glb": {
+      title: "3D Model",
+      description: "Ini adalah model 3D generik.",
+    },
+    "sambal.glb": {
+      title: "Sambal",
+      description: "Sambal yang sangat pedas dan menggugah selera.",
+    },
   };
 
   const urlParams = new URLSearchParams(window.location.search);
