@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   const currentModel = modelsData[modelName];
 
-  modelViewer.src = `/exhibitionUMKM-ArWeb/models/${modelName}`;
+  modelViewer.src = `./models/${modelName}`;
   modelTitle.textContent = currentModel.title;
   modelDescription.textContent = currentModel.description;
 });
