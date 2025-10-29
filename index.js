@@ -4,66 +4,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const modelDescription = document.getElementById("model-description");
 
   const modelsData = {
-    "oiiaioooooiai_cat.glb": {
-      title: "Kucing Oiiaioooooia",
+    "Logo_Mrec.glb": {
+      title: "Metaverse Research and Experience Center (MREC)",
       description:
         "",
     },
-    "catSigma.glb": {
-      title: "Kucing Sigma",
-      description:
-        "beliau adalah kucing sigma, kucing yang sangat mandiri dan tidak memerlukan perhatian dari manusia.",
-    },
-    "iron_man.glb": {
-      title: "Iron Man",
-      description:
-        "NOOOOOOOO dia sudah mati, tapi entah kenapa dia muncul lagi jadi dr.doom, hmmmmm menarik!!!",
-    },
-    "ghost.glb": {
-      title: "Hantu",
-      description: "Ihhhhhh Takuttttnyeeeeeeeeee",
-    },
-    "shiba.glb": {
-      title: "Anjing Shiba",
-      description: "Anjing shiba yang sangat lucu dan menggemaskan.",
-    },
-    "hitler.glb": {
-      title: "Hitler",
-      description: "Ini adalah model 3D dari Hitler.",
-    },
-    "coklat-thagen.glb": {
-      title: "Coklat Thagen",
-      description: "Coklat Thagen yang sangat lezat dan nikmat.",
-    },
-    "taro-thagen.glb": {
-      title: "Taro Thagen",
-      description: "Taro Thagen yang sangat lezat dan nikmat.",
-    },
-    "resident_evil_tyrant.glb": {
-      title: "Resident Evil Tyrant",
-      description: "Model 3D dari Resident Evil Tyrant.",
-    },
-    "GatotKaca.glb": {
-      title: "Gatot Kaca",
-      description: "Model 3D dari Gatot Kaca.",
-    },
-    "3DModel.glb": {
-      title: "3D Model",
-      description: "Ini adalah model 3D generik.",
-    },
-    "sambal.glb": {
-      title: "Sambal",
-      description: "Sambal yang sangat pedas dan menggugah selera.",
-    },
-    "amoe_craft_edlisimo_bag.glb": {
-      title: "Amoe Craft Edlisimo Bag",
+    "Amoe_Craft_Decoupage.glb": {
+      title: "Amoe Craft Decoupage Bag",
       description: "",
     },
-    "amoe_craft_eest_bag.glb": {
+    "Amoe_Craft_EestBag.glb": {
       title: "Amoe Craft Eest Bag",
       description: "",
     },
-    "amoe_craft_full_geest_bag.glb": {
+    "Amoe_Craft_FullGeestbag.glb": {
       title: "Amoe Craft Full Geest Bag",
       description: "",
     },
@@ -79,211 +33,219 @@ document.addEventListener("DOMContentLoaded", (event) => {
       title: "JurBos Mantap Pedas",
       description: "",
     },
-    "pie_susu_lembang_keju.glb": {
+    "Pie_Susu_Lembang_Keju.glb": {
       title: "Pie Susu Lembang Keju",
       description: "",
     },
-    "pie_susu_lembang_mixed.glb": {
+    "Pie_Susu_Lembang_Mixed.glb": {
       title: "Pie Susu Lembang Mixed",
       description: "",
     },
-    "pie_susu_lembang_ori.glb": {
+    "Pie_Susu_Lembang_Ori.glb": {
       title: "Pie Susu Lembang Ori",
       description: "",
     },
-    "astiga_carron.glb": {
+    "Astiga_Carron.glb": {
       title: "Astiga Carron",
       description: "",
     },
-    "astiga_lolla_xs.glb": {
+    "Astiga_Lolla_XS.glb": {
       title: "Astiga Lolla XS",
       description: "",
     },
-    "astiga_erena_rose_gold.glb": {
+    "Astiga_Erena_rose_gold.glb": {
       title: "Astiga Erena Rose Gold",
       description: "",
     },
-    "meeta_fauzan_difabel_quais_aluh_kimono_grey.glb": {
+    "Meeta_Fauzan_Difabel_Quais_Aluh_kimono_Abu.glb": {
       title: "Meeta Fauzan Difabel Quais Aluh Kimono Grey",
       description: "",
     },
-    "meeta_fauzan_difabel_quais_outer_batik_bordir.glb": {
+    "Meeta_Fauzan_Difabel_Quais_Outer_Batik_bordir.glb": {
       title: "Meeta Fauzan Difabel Quais Outer Batik Bordir",
       description: "",
     },
-    "meeta_fauzan_difabel_quais_jos_mela.glb": {
+    "Meeta_Fauzan_Difabel_Quais_Josmela.glb": {
       title: "Meeta Fauzan Difabel Quais Jos Mela",
       description: "",
     },
-    "shoficraft_griya_rajut_tas_rajut_tali_ukir.glb": {
+    "ShofiCraft_Griya_Rajut_Rajut_Tali_Ukir.glb": {
       title: "ShofiCraft Griya Rajut Tas Rajut Tali Ukir",
       description: "",
     },
-    "shoficraft_griya_rajut_tas_greeni_rajut.glb": {
+    "ShofiCraft_Griya_Rajut_Grenni.glb": {
       title: "ShofiCraft Griya Rajut Tas Greeni Rajut",
       description: "",
     },
-    "shoficraft_griya_rajut_tas_perca_rajut.glb": {
+    "ShofiCraft_Griya_Rajut_Perca.glb": {
       title: "ShofiCraft Griya Rajut Tas Perca Rajut",
       description: "",
     },
-    "kopi_yono_careuh_75_gula_aren.glb": {
+    "Kopi_Careuh_75_Kopi_Gula_Aren.glb": {
       title: "Kopi Yono Careuh 75 Gula Aren",
       description: "",
     },
-    "kopi_yono_careuh_75_kopi_jahe.glb": {
+    "Kopi_Careuh_75_Kopi_Jahe.glb": {
       title: "Kopi Yono Careuh 75 Kopi Jahe",
       description: "",
     },
-    "kopi_yono_careuh_75_rubusta.glb": {
+    "Kopi_Careuh_75_Kopi_Robusta.glb": {
       title: "Kopi Yono Careuh 75 Rubusta",
       description: "",
     },
-    "riz_batik_culture_pouch_cowo.glb": {
+    "Riz_Batik_Culture_Pouch_Cowok.glb": {
       title: "Riz Batik Culture Pouch Cowo",
       description: "",
     },
-    "riz_batik_culture_pouch_hana_kecil.glb": {
+    "Riz_Batik_Culture_Hana_Kecil.glb": {
       title: "Riz Batik Culture Pouch Hana Kecil",
       description: "",
     },
-    "riz_batik_culture_tas_tabung.glb": {
+    "Riz_Batik_Culture_Tas_Tabung.glb": {
       title: "Riz Batik Culture Tas Tabung",
       description: "",
     },
-    "handicraft_cinta_dewi_ella_bag.glb": {
+    "Handicraft_Cinta_Dewi_Ella_Bag.glb": {
       title: "Handicraft Cinta Dewi Ella Bag",
       description: "",
     },
-    "handicraft_cinta_dewi_pertiwi_bag.glb": {
+    "Handicraft_Cinta_Dewi_Pertiwi_Bag.glb": {
       title: "Handicraft Cinta Dewi Pertiwi Bag",
       description: "",
     },
-    "handicraft_cinta_dewi_ila_bag.glb": {
+    "Handicraft_Cinta_Dewi_Ila_Bag.glb": {
       title: "Handicraft Cinta Dewi Ila Bag",
       description: "",
     },
-    "semproel_semprong_kacang_vannilla.glb": {
+    "Semproel_Semprong_Kacang_Vannilla.glb": {
       title: "Semproel Semprong Kacang Vannilla",
       description: "",
     },
-    "semproel_semprong_kacang_stroberi.glb": {
+    "Semproel_Semprong_Kacang_Stroberi.glb": {
       title: "Semproel Semprong Kacang Stroberi",
       description: "",
     },
-    "semproel_semprong_kacang_pandan.glb": {
+    "Semproel_Semprong_Kacang_Pandan.glb": {
       title: "Semproel Semprong Kacang Pandan",
       description: "",
     },
-    "sambalku_jambal_roti.glb": {
+    "Sambalku_Sambal_Jambal_Roti.glb": {
       title: "Sambalku Jambal Roti",
       description: "",
     },
-    "sambalku_cumi.glb": {
+    "Sambalku_Sambal_Cumi.glb": {
       title: "Sambalku Cumi",
       description: "",
     },
-    "sambalku_cakalang.glb": {
+    "Sambalku_Sambal_Cakalang.glb": {
       title: "Sambalku Cakalang",
       description: "",
     },
-    "rsg_footwear_sandal_starla.glb": {
-      title: "RSG Footwear Sandal starla",
+    "RSG_Footwear_Sandal_Starla.glb": {
+      title: "RSG Footwear Sandal Starla",
       description: "",
     },
-    "rsg_footwear_tnico.glb": {
+    "RSG_Footwear_Tnico.glb": {
       title: "RSG Footwear Tnico",
       description: "",
     },
-    "rsg_footwear_desivo.glb": {
+    "RSG_Footwear_Desivo.glb": {
       title: "RSG Footwear Desivo",
       description: "",
     },
-    "nokha_2.0_willow.glb": {
+    "NOKHA_Willow.glb": {
       title: "NOKHA 2.0 Willow",
       description: "",
     },
-    "nokha_cool_grey.glb": {
+    "NOKHA_Cool_Grey.glb": {
       title: "NOKHA Cool Grey",
       description: "",
     },
-    "nokha_grey_lilac.glb": {
+    "NOKHA_Grey_Lilac.glb": {
       title: "NOKHA Grey Lilac",
       description: "",
     },
-    "mia_bordir_blazer_flowers_m.glb": {
+    "Mia_Bordir_Blazer_Flowers.glb": {
       title: "Mia Bordir Blazer Flowers M",
       description: "",
     },
-    "mia_bordir_blazer_mia.glb": {
-      title: "Mia Bordir Blazer Mia",
+    "Mia_Bordir_Blazer_Hitam_Emas.glb": {
+      title: "Mia Bordir Blazer Hitam Emas",
       description: "",
     },
-    "mia_bordir_blazer_roda.glb": {
+    "Mia_Bordir_Blazer_Roda.glb": {
       title: "Mia Bordir Blazer Roda",
       description: "",
     },
-    "baragakai_tempat_tisu_besar.glb": {
+    "Baragakai_Tempat_Tisu_Besar.glb": {
       title: "Baragakai Tempat Tisu Besar",
       description: "",
     },
-    "baragakai_stanel_hp.glb": {
+    "Baragakai_Stanel_HP.glb": {
       title: "Baragakai Stanel HP",
       description: "",
     },
-    "baragakai_tempat_sendok_kecil.glb": {
+    "Baragakai_Tempat_Sendok_Kecil.glb": {
       title: "Baragakai Tempat Sendok Kecil",
       description: "",
     },
-    "bina_bordir_ifw_o4.glb": {
-      title: "Bina Bordir IFW O4",
+    "Bina_Bordir_IFW_04.glb": {
+      title: "Bina Bordir IFW 04",
       description: "",
     },
-    "bina_bordir_ktp_01.glb": {
+    "Bina_Bordir_KTP_01.glb": {
       title: "Bina Bordir KTP 01",
       description: "",
     },
-    "bina_bordir_kebaya_magenta.glb": {
+    "Bina_Bordir_Kebaya_Magenta.glb": {
       title: "Bina Bordir Kebaya Magenta",
       description: "",
     },
-    "tara_bags_liona.glb": {
+    "TARA_BAGS_Liona.glb": {
       title: "TARA BAGS Liona",
       description: "",
     },
-    "tara_bags_valerie.glb": {
+    "TARA_BAGS_Valerie.glb": {
       title: "TARA BAGS Valerie",
       description: "",
     },
-    "tara_bags_hara_ethnic.glb": {
+    "TARA_BAGS_Hara_Ethnic.glb": {
       title: "TARA BAGS Hara Ethnic",
       description: "",
     },
-    "sasbotram_tempat_pensil_sasbotram.glb": {
-      title: "SASBOTRAM Tempat Pensil Sasbotram",
+    "SASBOTRAM_Tempat_Pensil_Hijau.glb": {
+      title: "SASBOTRAM Tempat Pensil Hijau",
       description: "",
     },
-    "sasbotram_pouch_kecil.glb": {
+    "SASBOTRAM_Tempat_Pensil_Pink.glb": {
+      title: "SASBOTRAM Tempat Pensil Pink",
+      description: "",
+    },
+    "SASBOTRAM_Pouch_Kecil.glb": {
       title: "SASBOTRAM Pouch Kecil",
       description: "",
     },
-    "kreasi_imah_kertas_tempat_tisu.glb": {
+    "Kreasi_Imah_Kertas_Tempat_Tisu.glb": {
       title: "Kreasi Imah Kertas Tempat Tisu",
       description: "",
     },
-    "kreasi_imah_kertas_tempat_pensil.glb": {
+    "Kreasi Imah Kertas_Tempat_Tisu_2.glb": {
+      title: "Kreasi Imah Kertas Tempat Tisu 2",
+      description: "",
+    },
+    "Kreasi_Imah_Kertas_Tempat_Pensil.glb": {
       title: "Kreasi Imah Kertas Tempat Pensil",
       description: "",
     },
-    "faber_instrument_radio_cidaun.glb": {
+    "Faber_Instrument_Radio_Cidaun.glb": {
       title: "Faber Instrument Radio Cidaun",
       description: "",
     },
-    "faber_instrument_radio_ciranjang.glb": {
+    "Faber_Instrument_Radio_Ciranjang.glb": {
       title: "Faber Instrument Radio Ciranjang",
       description: "",
     },
-    "faber_instrument_radio_cianjur.glb": {
+    "Faber_Instrument_Radio_Cianjur.glb": {
       title: "Faber Instrument Radio Cianjur",
       description: "",
     },
@@ -293,7 +255,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let modelName = urlParams.get("model");
 
   if (!modelName || !modelsData[modelName]) {
-    modelName = "oiiaioooooiai_cat.glb";
+    modelName = "Logo_Mrec.glb";
   }
 
   const currentModel = modelsData[modelName];
