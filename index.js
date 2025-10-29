@@ -21,16 +21,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
       title: "Amoe Craft Full Geest Bag",
       description: "",
     },
-    "jurbos_mantap_bbq.glb": {
-      title: "JurBos Mantap BBQ",
+    "JurBos_Mantap_BaksoGorengBBQ.glb": {
+      title: "JurBos Mantap Bakso Goreng BBQ",
       description: "",
     },
-    "jurbos_mantap_balado.glb": {
-      title: "JurBos Mantap Balado",
+    "JurBos_Mantap_BaksoGorengBalado.glb": {
+      title: "JurBos Mantap Bakso Goreng Balado",
       description: "",
     },
-    "jurbos_mantap_pedas.glb": {
-      title: "JurBos Mantap Pedas",
+    "JurBos_Mantap_BaksoGorengPedas.glb": {
+      title: "JurBos Mantap Bakso Goreng Pedas",
       description: "",
     },
     "Pie_Susu_Lembang_Keju.glb": {
