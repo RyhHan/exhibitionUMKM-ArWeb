@@ -73,12 +73,28 @@ model-viewer {
   color: #cfcfcf;
 }
 
+#logo {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: 40px;
+}
+
 @media (min-width: 768px) {
   #description-card {
     top: 40px;
     left: 40px;
     transform: none;
     text-align: left;
+  }
+  #logo {
+    bottom: 10px;
+    right: 20px;
+    left: auto;
+    transform: none;
+    height: 70px;
   }
 }
 
