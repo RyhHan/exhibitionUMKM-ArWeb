@@ -39,7 +39,7 @@ model-viewer {
 
 #description-card {
   position: absolute;
-  top: 5%;
+  top: 7%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
@@ -48,13 +48,13 @@ model-viewer {
   max-width: 400px;
   padding: clamp(14px, 3vw, 26px);
 
-  background: rgba(20, 20, 20, 0.6);
+  background: rgb(255, 255, 255);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
   text-align: center;
-  color: #e5e5e5;
+  color: #b81414;
 }
 
 #model-title {
@@ -62,9 +62,9 @@ model-viewer {
   font-size: clamp(1.1rem, 4vw, 1.7rem);
   font-weight: bold;
   text-transform: capitalize;
-  background: linear-gradient(135deg, #00f0ff, #8a2be2);;
+  /* background: red;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 #model-description {
@@ -74,12 +74,12 @@ model-viewer {
 }
 
 #bg-logo {
-  background: linear-gradient(190deg, #0197a1, #511886);
+  background: white;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 0;
   width: 550px;
   height: 50px;
@@ -88,7 +88,7 @@ model-viewer {
 
 #logo {
   position: fixed;
-  bottom: 5px;
+  top: 5px;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
@@ -98,7 +98,7 @@ model-viewer {
 
 @media (min-width: 768px) {
   #description-card {
-    top: 40px;
+    top: 70px;
     left: 40px;
     transform: none;
     text-align: left;
@@ -109,11 +109,17 @@ model-viewer {
     right: 20px;
     left: auto;
     transform: none;
-    height: 70px;
+    height: 65px;
   }
 
   #bg-logo {
     height: 70px;
+  }
+}
+
+@media(min-width:1050px) {
+  #description-card {
+    top: 40px;
   }
 }
 
