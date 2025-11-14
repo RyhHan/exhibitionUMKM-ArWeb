@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       title: "Handicraft Cinta Dewi Ila Bag",
       description: "",
     },
-    "Semproel_Semprong_Kacang_Vanila.glb": {
+    "Semproel_Semprong_Kacang_Vannilla.glb": {
       title: "Semproel Semprong Kacang Vannilla",
       description: "",
     },
